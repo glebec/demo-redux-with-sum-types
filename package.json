@@ -8,7 +8,9 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepush": "echo \"Please configure the prepush script\"",
+		"build": "webpack",
+		"build-watch": "npm run build -- -w",
+		"start": "opn public/index.html",
 		"lint": "esw --ext .js,.jsx --ignore-path .gitignore --cache --format node_modules/eslint-formatter-pretty",
 		"lint-watch": "npm run lint -- --watch"
 	},
@@ -20,7 +22,16 @@
 		"url": "https://github.com/glebec/demo-redux"
 	},
 	"bugs": "https://github.com/glebec/demo-redux/issues",
-	"dependencies": {},
+	"dependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-react": "^6.24.1",
+		"opn-cli": "^3.1.0",
+		"redux": "^3.7.2",
+		"redux-devtools-extension": "^2.13.2",
+		"webpack": "^3.10.0"
+	},
 	"devDependencies": {
 		"babel-eslint": "^7.2.3",
 		"eslint": "^3.19.0",
