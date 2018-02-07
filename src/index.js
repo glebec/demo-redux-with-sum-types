@@ -4,10 +4,17 @@ import ReactDOM from 'react-dom'
 // demo some redux code
 import './redux'
 
+// react components
+
+import Clicker from './clicker'
+
 console.log('hello world')
 
 const Main = () => (
-	<p>React is Live</p>
+	<div>
+		<p>React is Live</p>
+		<Clicker />
+	</div>
 )
 
 ReactDOM.render(
