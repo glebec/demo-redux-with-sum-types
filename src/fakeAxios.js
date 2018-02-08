@@ -1,5 +1,7 @@
 // simulating a backend
 
+const SIMULATE_DELAY = 1000
+
 const response = {
 	data: [{
 		id: 1,
@@ -19,7 +21,7 @@ const fakeAxios = {
 			setTimeout(() => {
 				if (url === '/api/cats') resolve(response)
 				else reject(Error('404: Could not fetch ' + url))
-			}, 20)
+			}, SIMULATE_DELAY)
 		})
 	}
 }

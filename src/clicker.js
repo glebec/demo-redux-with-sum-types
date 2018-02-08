@@ -27,13 +27,13 @@ class Clicker extends React.Component {
 
 	handleIncrement (evt) {
 		evt.preventDefault()
-		console.log('you clicked the button')
+		// console.log('you clicked the button')
 		store.dispatch(incrementClicked())
 	}
 
 	handleSet (evt) {
 		evt.preventDefault()
-		console.log('you submitted the form', +evt.target.val.value)
+		// console.log('you submitted the form', +evt.target.val.value)
 		store.dispatch(numberSet(+evt.target.val.value))
 	}
 
