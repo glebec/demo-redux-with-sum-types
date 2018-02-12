@@ -1,5 +1,5 @@
 {
-	"name": "demo-redux",
+	"name": "demo-rr-with-sum-types",
 	"version": "1.0.0",
 	"description": "",
 	"engines": {
@@ -10,30 +10,40 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "webpack",
 		"build-watch": "npm run build -- -w",
-		"start": "opn public/index.html",
+		"start": "opn src/index.html",
 		"lint": "esw --ext .js,.jsx --ignore-path .gitignore --cache --format node_modules/eslint-formatter-pretty",
 		"lint-watch": "npm run lint -- --watch"
 	},
 	"author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
 	"license": "MIT",
-	"homepage": "https://github.com/glebec/demo-redux#readme",
+	"homepage": "https://github.com/glebec/demo-rr-with-sum-types#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/glebec/demo-redux"
+		"url": "https://github.com/glebec/demo-rr-with-sum-types"
 	},
-	"bugs": "https://github.com/glebec/demo-redux/issues",
+	"bugs": "https://github.com/glebec/demo-rr-with-sum-types/issues",
 	"dependencies": {
 		"@babel/core": "^7.0.0-beta.39",
 		"@babel/preset-env": "^7.0.0-beta.39",
 		"@babel/preset-react": "^7.0.0-beta.39",
 		"babel-loader": "8.0.0-beta.0",
+		"babel-polyfill": "^6.26.0",
+		"bulma": "^0.6.2",
+		"classnames": "^2.2.5",
+		"css-loader": "^0.28.9",
+		"daggy": "^1.2.0",
+		"node-sass": "^4.7.2",
 		"opn-cli": "^3.1.0",
 		"react": "^16.2.0",
 		"react-dom": "^16.2.0",
+		"react-redux": "^5.0.6",
+		"react-router-dom": "^4.2.2",
 		"redux": "^3.7.2",
 		"redux-devtools-extension": "^2.13.2",
 		"redux-logger": "^3.0.6",
 		"redux-thunk": "^2.2.0",
+		"sass-loader": "^6.0.6",
+		"style-loader": "^0.20.1",
 		"webpack": "^3.10.0"
 	},
 	"devDependencies": {

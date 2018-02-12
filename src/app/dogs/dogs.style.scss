@@ -1,0 +1,13 @@
+
+@keyframes from-above {
+	from {
+		transform: translateY(-20px)
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+
+.flip-down {
+	animation: 0.5s cubic-bezier(0.075, 1.650, 0.790, 0.885) 0s 1 normal from-above;
+}

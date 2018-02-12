@@ -1,0 +1,49 @@
+
+@keyframes fade {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+.pulsing {
+	animation: 0.25s linear 0s infinite alternate fade;
+}
+
+@keyframes pop {
+	0% {
+		transform: scale(1)
+	}
+	20% {
+		transform: scale(1.1)
+	}
+	100% {
+		transform: scale(1)
+	}
+}
+
+.pop {
+	animation: 0.5s ease-out 0s 1 normal pop;
+	display: inline-block;
+}
+
+@keyframes nono {
+	0% {
+		transform: rotateZ(0deg)
+	}
+	25% {
+		transform: rotateZ(-1deg)
+	}
+	75% {
+		transform: rotateZ(1deg)
+	}
+	100% {
+		transform: rotateZ(0deg)
+	}
+}
+
+.nono {
+	animation: 0.1s ease 0s 2 normal nono;
+}

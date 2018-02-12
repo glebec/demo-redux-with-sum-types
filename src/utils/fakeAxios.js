@@ -1,26 +1,50 @@
 // simulating a backend
 
-const SIMULATE_DELAY = 1000
+const SIMULATE_DELAY = 1500
+const SIMULATE_FAILURE = false
 
-const response = {
+const cats = {
 	data: [{
 		id: 1,
-		name: 'Grumples'
+		name: 'Grumples',
 	}, {
 		id: 2,
-		name: 'Snuggles'
+		name: 'Snuggles',
 	}, {
 		id: 3,
-		name: 'Mittens'
+		name: 'Mittens',
 	}]
+}
+
+const dogs = {
+	data: [{
+		id: 1,
+		name: 'Ruby',
+	}, {
+		id: 2,
+		name: 'Star',
+	}, {
+		id: 3,
+		name: 'Stanley',
+	}]
+}
+
+const router = {
+	'/api/cats': cats,
+	'/api/dogs': dogs,
 }
 
 const fakeAxios = {
 	get(url) {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
-				if (url === '/api/cats') resolve(response)
-				else reject(Error('404: Could not fetch ' + url))
+				try {
+					const response = router[url]
+					if (response && !SIMULATE_FAILURE) resolve(response)
+					else reject(Error('404: Could not fetch ' + url))
+				} catch (err) {
+					reject(err)
+				}
 			}, SIMULATE_DELAY)
 		})
 	}

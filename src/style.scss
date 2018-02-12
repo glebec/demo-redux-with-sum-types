@@ -1,0 +1,75 @@
+// Import the initial variables. Note: `~` is a shortcut to node_modules.
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Add and override variables as needed.
+
+// $pink: #ffb3b3;
+
+// $primary: $purple;
+
+// $family-serif: "Merriweather", "Georgia", serif;
+// $family-primary: $family-serif;
+
+// Import the rest of Bulma.
+@import "~bulma/bulma.sass";
+
+.hero.is-primary .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a {
+	transition: all 0.25s ease-out;
+	&:hover {
+		opacity: 1.0;
+		transition: all 0.25s ease-out;
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	25% {
+		transform: rotateZ(-5deg);
+	}
+	75% {
+		transform: rotateZ(5deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+#title {
+	display: inline-block;
+	&:hover {
+		animation: 0.2s linear 0s 3 running shake;
+	}
+}
+
+@keyframes slideInFromTop {
+	from {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.from-top {
+	animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromRight {
+	from {
+		transform: translateX(10px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.from-right-fast {
+	animation: 0.25s ease-out 0s 1 slideInFromRight;
+}
