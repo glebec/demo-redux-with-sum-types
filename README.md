@@ -1,3 +1,9 @@
-# Redux Demo
+# Redux Demo with Style
 
-A small demo app for illustrating Redux in lectures.
+## Sum Types & CSS Animations
+
+Repo for experimenting with:
+
+* Bulma CSS
+* CSS animations
+* daggy-based sum types as Redux state tree nodes
