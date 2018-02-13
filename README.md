@@ -34,6 +34,10 @@ Repo for experimenting with:
 * arrows
 * etc.
 
+### React
+
+* Uses `classNames` library for easy multiple class name activation
+
 ### React-Redux
 
 * Object syntax shorthand for `mapDispatchToProps` with action creators
