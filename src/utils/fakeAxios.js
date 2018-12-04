@@ -29,9 +29,20 @@ const dogs = {
 	}]
 }
 
+const snakes = {
+	data: [{
+		id: 1,
+		name: 'Ekans'
+	}, {
+		id: 2,
+		name: 'Naga'
+	}]
+}
+
 const router = {
 	'/api/cats': cats,
 	'/api/dogs': dogs,
+	'/api/snakes': snakes,
 }
 
 const fakeAxios = {

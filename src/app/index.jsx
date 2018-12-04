@@ -5,6 +5,7 @@ import Header from './header'
 import Home from './home'
 import Cats from './cats'
 import Dogs from './dogs'
+import Snakes from './snakes'
 import BulmaBox from './bulma-box'
 
 // Higher-Order Component (function which takes & returns components)
@@ -27,6 +28,7 @@ const App = () => (
 				<Route exact path="/" component={ fromRight(Home) } />
 				<Route path="/cats" component={ fromRight(Cats) } />
 				<Route path="/dogs" component={ fromRight(Dogs) } />
+				<Route path="/snakes" component={ fromRight(Snakes) } />
 			</BulmaBox>
 		</div>
 	</Router>

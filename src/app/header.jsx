@@ -34,6 +34,7 @@ const Header = () => (
 						<NavLink to="/" activeClassName="is-active">Home</NavLink>
 						<NavLink to="/cats" activeClassName="is-active">Cats</NavLink>
 						<NavLink to="/dogs" activeClassName="is-active">Dogs</NavLink>
+						<NavLink to="/snakes" activeClassName="is-active">Snakes</NavLink>
 					</ul>
 				</div>
 			</nav>
